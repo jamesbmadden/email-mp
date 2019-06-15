@@ -25,7 +25,7 @@ class App extends React.Component {
   render() {
 
     let loading = this.state.loading && (<>
-      <p>Loading...</p>
+      <h1>Loading...</h1>
     </>)
 
     let forum = !this.state.loading && (<><h1 className="title-reg">Enter Your <span className="title-bold">Postal Code</span>:</h1>
