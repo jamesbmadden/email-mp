@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/email-mp/static/css/main.8467b1c5.chunk.css",
+    "main.js": "/email-mp/static/js/main.4ae79567.chunk.js",
+    "main.js.map": "/email-mp/static/js/main.4ae79567.chunk.js.map",
+    "runtime~main.js": "/email-mp/static/js/runtime~main.e00d7648.js",
+    "runtime~main.js.map": "/email-mp/static/js/runtime~main.e00d7648.js.map",
+    "static/js/2.0771dcc1.chunk.js": "/email-mp/static/js/2.0771dcc1.chunk.js",
+    "static/js/2.0771dcc1.chunk.js.map": "/email-mp/static/js/2.0771dcc1.chunk.js.map",
+    "index.html": "/email-mp/index.html",
+    "precache-manifest.d0885959c2609b886cde8221738a0ef3.js": "/email-mp/precache-manifest.d0885959c2609b886cde8221738a0ef3.js",
+    "service-worker.js": "/email-mp/service-worker.js",
+    "static/css/main.8467b1c5.chunk.css.map": "/email-mp/static/css/main.8467b1c5.chunk.css.map",
+    "static/media/icon.svg": "/email-mp/static/media/icon.9f2a74e3.svg",
+    "static/media/search.svg": "/email-mp/static/media/search.bb597c23.svg"
+  }
+}
