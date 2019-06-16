@@ -25,7 +25,7 @@ export default class MP extends React.Component {
             <h1 className="title-reg">{this.state.riding.candidates_centroid[0].first_name} <span className="title-bold">{this.state.riding.candidates_centroid[0].last_name}</span></h1>
           </div>
           <a href={`mailto:${this.state.riding.candidates_centroid[0].email}`}><button className="mp-button">Email</button></a>
-          <a><button className="mp-button mp-button--blue">Twitter</button></a>
+          {this.state.riding.candidates_centroid[0].extra.twitter && <a href={this.state.riding.candidates_centroid[0].extra.twitter} target="_blank" rel="noreferrer noopener"><button className="mp-button mp-button--blue">Twitter</button></a>}
         </div>
       </>)}
     </>);
