@@ -10,8 +10,13 @@ export default class App extends React.Component {
     super(props);
     this.state = {value: '', submitted: false};
 
+    this.handleReset = this.handleReset.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleReset() {
+    this.setState({value: '', submitted: false});
   }
 
   handleChange(event) {
@@ -37,7 +42,7 @@ export default class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={logo} className="App-logo" alt="logo" onClick={this.handleReset}/>
           <span>Email <span className="title-bold">MPs</span></span>
         </header>
         <main className="App-main">
