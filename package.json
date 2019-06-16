@@ -2,6 +2,7 @@
   "name": "email-mp",
   "version": "1.0.0",
   "private": true,
+  "homepage" : "http://jamesbmadden.github.io/email-mp",
   "dependencies": {
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
