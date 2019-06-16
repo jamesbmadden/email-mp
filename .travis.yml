@@ -3,6 +3,7 @@ node_js:
   - 10
 deploy:
   provider: pages
+  file: "build"
   github_token: $GITHUB_PAT
   skip_cleanup: true
 before_install:
