@@ -1,0 +1,16 @@
+language: node_js
+node_js: 
+  - 10
+deploy:
+  provider: pages
+  github_token: $GITHUB_PAT
+  skip_cleanup: true
+before_install:
+  - npm i -g npm
+install:
+  - npm ci
+cache:
+  directories:
+  - "$HOME/.npm"
+script:
+  - npm run travis
