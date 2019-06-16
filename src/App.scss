@@ -35,6 +35,7 @@
 .search-bar {
   width: calc(100% - 2rem);
   max-width: 512px;
+  display: flex;
 }
 
 .App-postal {
