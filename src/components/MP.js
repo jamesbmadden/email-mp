@@ -19,6 +19,7 @@ export default class MP extends React.Component {
         <h1>Loading {this.postal}...</h1>
       </>)}
       {this.state.riding && (<>
+        <img class="mp-image" src={this.state.riding.candidates_centroid[0].photo_url} />
         <h1>{this.state.riding.candidates_centroid[0].name}</h1>
         <a href={`mailto:${this.state.riding.candidates_centroid[0].first_name}.${this.state.riding.candidates_centroid[0].last_name}@parl.gc.ca`}><button className="mp-button">Email</button></a>
       </>)}
