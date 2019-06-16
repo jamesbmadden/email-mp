@@ -3,6 +3,7 @@
 .mp-header {
   display: flex;
   align-items: center;
+  margin-bottom: 1rem;
 }
 .mp-button {
   height: 4rem;
@@ -14,6 +15,15 @@
   color: white;
   font-size: 1rem;
   cursor: pointer;
+  margin-right: 1rem;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06);
+  transition: box-shadow 0.2s;
+}
+.mp-button:hover {
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
+}
+.mp-button--blue {
+  background: #42a5f5
 }
 .mp-image {
   width: 8rem;
@@ -25,4 +35,5 @@
 .mp-box {
   height: 100%;
   padding: 1rem;
+  overflow-y: auto;
 }
