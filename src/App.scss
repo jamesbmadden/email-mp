@@ -9,6 +9,21 @@
   box-sizing: border-box;
 }
 
+* {
+  pointer-events: none;
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+button, input, img, a {
+  pointer-events: all;
+  cursor: initial;
+}
+
 .App-logo {
   padding: 0 1rem;
   height: 4rem;
