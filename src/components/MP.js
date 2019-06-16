@@ -22,9 +22,10 @@ export default class MP extends React.Component {
         <div className="mp-box">
           <div className="mp-header">
             <img className="mp-image" src={this.state.riding.candidates_centroid[0].photo_url} alt={this.state.riding.candidates_centroid[0].name} />
-            <h1>{this.state.riding.candidates_centroid[0].name}</h1>
+            <h1 className="title-reg">{this.state.riding.candidates_centroid[0].first_name} <span className="title-bold">{this.state.riding.candidates_centroid[0].last_name}</span></h1>
           </div>
-          <a href={`mailto:${this.state.riding.candidates_centroid[0].first_name}.${this.state.riding.candidates_centroid[0].last_name}@parl.gc.ca`}><button className="mp-button">Email</button></a>
+          <a href={`mailto:${this.state.riding.candidates_centroid[0].email}`}><button className="mp-button">Email</button></a>
+          <a><button className="mp-button mp-button--blue">Twitter</button></a>
         </div>
       </>)}
     </>);
