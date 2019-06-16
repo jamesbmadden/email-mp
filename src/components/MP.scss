@@ -1,5 +1,9 @@
 @import '../variables';
 
+.mp-header {
+  display: flex;
+  align-items: center;
+}
 .mp-button {
   height: 4rem;
   min-width: 128px;
@@ -9,4 +13,12 @@
   background: $theme_primary;
   color: white;
   font-size: 1rem;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+.mp-image {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  border-radius: 4rem;
 }
