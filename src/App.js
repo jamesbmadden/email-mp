@@ -1,13 +1,14 @@
 import React from 'react';
 import logo from './icons/icon.svg';
 import search from './icons/search.svg';
+import MP from './components/MP';
 import './App.scss';
 
-class App extends React.Component {
+export default class App extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {value: '', loading: false};
+    this.state = {value: '', submitted: false};
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -18,17 +19,15 @@ class App extends React.Component {
   }
 
   handleSubmit(event) {
-    this.setState({loading: true});
+    this.setState({submitted: true});
     event.preventDefault();
   }
 
   render() {
 
-    let loading = this.state.loading && (<>
-      <h1>Loading...</h1>
-    </>)
+    let mp = this.state.submitted && <MP postal={this.state.value} />;
 
-    let forum = !this.state.loading && (<><h1 className="title-reg">Enter Your <span className="title-bold">Postal Code</span>:</h1>
+    let forum = !this.state.submitted && (<><h1 className="title-reg">Enter Your <span className="title-bold">Postal Code</span>:</h1>
       <form className="search-bar" onSubmit={this.handleSubmit}>
         <input className="App-postal title-bold" name="postal" id="postal" placeholder="A1B2C3" type="text" 
         value={this.state.value} onChange={this.handleChange} maxLength="6"></input>
@@ -43,12 +42,10 @@ class App extends React.Component {
         </header>
         <main className="App-main">
           {forum}
-          {loading}
+          {mp}
         </main>
       </div>
     );
   }
 
 }
-
-export default App;
