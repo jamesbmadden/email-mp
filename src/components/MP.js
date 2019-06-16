@@ -20,7 +20,7 @@ export default class MP extends React.Component {
       </>)}
       {this.state.riding && (<>
         <div className="mp-header">
-          <img className="mp-image" src={this.state.riding.candidates_centroid[0].photo_url} />
+          <img className="mp-image" src={this.state.riding.candidates_centroid[0].photo_url} alt={this.state.riding.candidates_centroid[0].name} />
           <h1>{this.state.riding.candidates_centroid[0].name}</h1>
         </div>
         <a href={`mailto:${this.state.riding.candidates_centroid[0].first_name}.${this.state.riding.candidates_centroid[0].last_name}@parl.gc.ca`}><button className="mp-button">Email</button></a>
