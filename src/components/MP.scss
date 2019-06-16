@@ -1,0 +1,12 @@
+@import '../variables';
+
+.mp-button {
+  height: 4rem;
+  min-width: 128px;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: 0;
+  background: $theme_primary;
+  color: white;
+  font-size: 1rem;
+}
