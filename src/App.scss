@@ -37,6 +37,10 @@ button, input, img, a {
   font-size: calc(10px + 2vmin);
   color: #222;
   box-shadow: 0 20px 25px -5px rgba(0,0,0,.1),0 10px 10px -5px rgba(0,0,0,.04);
+
+  position: fixed;
+  width: 100%;
+  top: 0px;
 }
 
 .App-main {
@@ -45,6 +49,8 @@ button, input, img, a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  margin-top: 64px;
 }
 
 .search-bar {
