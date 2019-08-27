@@ -43,7 +43,7 @@ export default class App extends React.Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" onClick={this.handleReset}/>
-          <span>Email <span className="title-bold">MPs</span></span>
+          <span>Email <span className="title-bold">Reps</span></span>
         </header>
         <main className="App-main">
           {forum}
