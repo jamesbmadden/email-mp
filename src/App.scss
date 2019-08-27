@@ -41,7 +41,7 @@ button, input, img, a {
 
 .App-main {
   display: flex;
-  height: calc(100vh - 4rem);
+  min-height: calc(100vh - 4rem);
   align-items: center;
   justify-content: center;
   flex-direction: column;
