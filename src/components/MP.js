@@ -12,8 +12,8 @@ export default class MP extends React.Component {
       .then(response => response.json())
       .then(riding => {
         let mpList = riding.representatives_centroid.filter(rep => rep.elected_office === 'MP');
-        let mlaList = riding.representatives_centroid.filter(rep => rep.elected_office === 'MLA');
-        let reps = riding.representatives_centroid.filter(rep => rep.elected_office !== 'MP' && rep.elected_office !== 'MLA');
+        let mlaList = riding.representatives_centroid.filter(rep => rep.elected_office === 'MLA' || rep.elected_office === 'MHA' || rep.elected_office === 'MPP' || rep.elected_office === 'MNA');
+        let reps = riding.representatives_centroid.filter(rep => rep.elected_office !== 'MP' && rep.elected_office !== 'MLA' && rep.elected_office !== 'MHA' && rep.elected_office !== 'MPP' && rep.elected_office !== 'MNA');
         this.setState({mp: mpList[0], reps, mla: mlaList[0]});
       });
   }
@@ -37,7 +37,7 @@ export default class MP extends React.Component {
           {this.state.mp.extra.twitter && <a href={this.state.mp.extra.twitter} target="_blank" rel="noreferrer noopener"><button className="mp-button mp-button--blue">Twitter</button></a>}
           {this.state.mp.extra.facebook && <a href={this.state.mp.extra.facebook} target="_blank" rel="noreferrer noopener"><button className="mp-button mp-button--darkblue">Facebook</button></a>}
         </div>
-        <h2>MLA (Provincial Rep)</h2>
+        <h2>Provincial Rep</h2>
         <div className="mp-box">
           <div className="mp-header">
             <img className="mp-image" src={this.state.mla.photo_url} alt={this.state.mla.name} />
