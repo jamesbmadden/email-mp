@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 
-* {
+*:not(input) {
   pointer-events: none;
   cursor: inherit;
   -webkit-touch-callout: none;
